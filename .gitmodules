@@ -1,0 +1,6 @@
+[submodule "lab-sorcery"]
+	path = lab-sorcery
+	url = https://github.com/guisabellla/lab-sorcery
+[submodule "sorting"]
+	path = sorting
+	url = https://github.com/guisabellla/sorting

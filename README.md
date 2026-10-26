@@ -108,7 +108,7 @@ If you run
 $ ls sorting
 ```
 then you should see all of the contents of your sorting repo.
-Running the command 
+Running the command
 ```
 $ python3 runtimes.py
 ```
@@ -146,7 +146,31 @@ $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
 
-<!-- add the table here -->
+| len(xs) | timsort (s) | merge_sorted (s) | quick_sorted (s)
+| --- | --- | --- | --- |
+| 1| 2.27e-06| 2.01e-06| 1.23e-06 |
+| 2| 1.59e-06| 5.56e-06| 7.12e-06 |
+| 4| 1.16e-06| 7.83e-06| 8.15e-06 |
+| 8| 1.33e-06| 1.26e-05| 1.25e-05 |
+| 16| 1.76e-06| 2.32e-05| 2.71e-05 |
+| 32| 2.48e-06| 4.60e-05| 5.98e-05 |
+| 64| 5.52e-06| 9.85e-05| 1.29e-04 |
+| 128| 9.96e-06| 2.05e-04| 2.67e-04 |
+| 256| 2.05e-05| 4.45e-04| 5.83e-04 |
+| 512| 4.25e-05| 9.75e-04| 1.28e-03 |
+| 1024| 9.89e-05| 2.08e-03| 2.83e-03 |
+| 2048| 1.93e-04| 4.44e-03| 6.14e-03 |
+| 4096| 4.58e-04| 9.41e-03| 1.32e-02 |
+| 8192| 9.54e-04| 1.98e-02| 2.61e-02 |
+| 16384| 1.87e-03| 4.33e-02| 5.74e-02 |
+| 32768| 4.22e-03| 9.07e-02| 1.23e-01 |
+| 65536| 9.23e-03| 2.02e-01| 2.66e-01 |
+| 131072| 1.99e-02| 4.11e-01| 5.77e-01 |
+| 262144| 4.51e-02| 9.01e-01| 1.25e+00 |
+| 524288| 1.02e-01| 1.96e+00| 2.69e+00 |
+| 1048576| 2.37e-01| 4.07e+00| 5.95e+00 |
+| 2097152| 5.59e-01| 9.16e+00| 1.32e+01 |
+| 4194304| 1.23e+00| 1.96e+01| 2.91e+01 |
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$ ),
